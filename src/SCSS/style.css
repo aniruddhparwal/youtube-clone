@@ -100,9 +100,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #ffffff;
 }
 
@@ -144,5 +141,52 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.videocard {
+  width: 253px;
+  margin: 0 8px 40px 8px;
+}
+
+.videocard img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.videoCard__infoContainer--avatar {
+  margin: 12px 12px 0 0;
+}
+
+.videoCard__infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.videoCard__infoContainer h4 {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.videoCard__infoContainer--data {
+  font-size: 14px;
+}
+
+.videoCard__infoContainer--data div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

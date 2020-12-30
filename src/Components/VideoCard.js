@@ -6,13 +6,13 @@ function VideoCard({ TumbSrc, ChannelSrc, Title, ChannelName, ViewCount, Uploade
         <div className="videocard">
             <img src={TumbSrc} />
             <div className="videoCard__infoContainer">
-                <Avatar src={ChannelSrc} />
+                <div className="videoCard__infoContainer--avatar"><Avatar src={ChannelSrc} /></div>
                 <div className="videoCard__infoContainer--data">
                     <h4>{Title}</h4>
                     <h5>{ChannelName}</h5>
                     <div>
-                        {ViewCount}
-                        {Uploadedat}
+                        <span>{ViewCount} Views</span>
+                        <span>{Uploadedat} ago</span>
                     </div>
                 </div>
             </div>

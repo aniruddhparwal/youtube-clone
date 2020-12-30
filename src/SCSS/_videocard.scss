@@ -1,0 +1,32 @@
+.videocard{
+    width: 253px;
+    margin: 0 8px 40px 8px;
+    img{
+        width: 100% ;
+        object-fit: contain;
+    }
+}
+.videoCard__infoContainer--avatar{
+    margin: 12px 12px 0 0;
+}
+
+.videoCard__infoContainer{
+    display: flex;
+    h4{
+        // display: block;
+        // width: 100px;
+        max-width: 100%;
+        overflow: hidden;
+        // white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.videoCard__infoContainer--data{
+    font-size: 14px;
+
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
