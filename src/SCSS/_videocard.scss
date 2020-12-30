@@ -13,12 +13,14 @@
 .videoCard__infoContainer{
     display: flex;
     h4{
-        // display: block;
-        // width: 100px;
-        max-width: 100%;
         overflow: hidden;
-        // white-space: nowrap;
         text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+    h5{
+        color: #606060;
     }
 }
 

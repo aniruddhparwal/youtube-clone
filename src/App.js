@@ -4,6 +4,8 @@ import NavBar from './Components/NavBar';
 import './SCSS/style.css'
 
 function App() {
+  // document.getElementsByTagName('title') = "YouTube"
+  document.title = "Youtube"
   return (
     <div className="App">
       <NavBar />

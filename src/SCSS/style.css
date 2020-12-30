@@ -11,6 +11,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 .navbar__left {
@@ -101,6 +105,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 56px;
 }
 
 .sidebar hr {
@@ -172,9 +179,16 @@
 }
 
 .videoCard__infoContainer h4 {
-  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.videoCard__infoContainer h5 {
+  color: #606060;
 }
 
 .videoCard__infoContainer--data {
