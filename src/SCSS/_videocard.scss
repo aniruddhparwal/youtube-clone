@@ -1,9 +1,14 @@
+$information-phone: "only screen and (max-width : 480px)";
+
 .videocard{
     width: 253px;
     margin: 0 8px 40px 8px;
     img{
         width: 100% ;
         object-fit: contain;
+    }
+    @media #{$information-phone} {
+        width: auto;
     }
 }
 .videoCard__infoContainer--avatar{

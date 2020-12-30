@@ -1,3 +1,5 @@
+$information-phone: "only screen and (max-width : 480px)";
+
 .sidebar{
     width: 240px;
     display: flex;
@@ -8,6 +10,17 @@
     hr{
         margin: 12px 0;
         border-top:1px solid #e5e5e5;
+    }
+    @media #{$information-phone} {
+        flex-direction: row;
+        position: absolute;
+        width: 100vw;
+        overflow-y: hidden;
+        position: fixed;
+        bottom: 0px;
+        top: auto;
+        height: 60px;
+        justify-content: space-between;
     }
 }
 .sidebar__item{
@@ -20,7 +33,16 @@
     }
     &:hover{
     background-color: #f2f2f2;
-
+    }
+    @media #{$information-phone} {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10px;
+    }
+}
+.sidebar__additional{
+    @media #{$information-phone} {
+        display: none;
     }
 }
 

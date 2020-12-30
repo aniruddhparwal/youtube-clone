@@ -9,7 +9,7 @@ function NavBar() {
                 <div className="navbar__left--left">
                     <Menu style={{ color: "#606060" }} />
                 </div>
-                <div className="navbar__left--left">
+                <div className="navbar__left--right">
                     <YouTube style={{ fontSize: 40, color: '#ff0000' }} />
                     <h2>YouTube</h2>
                 </div>

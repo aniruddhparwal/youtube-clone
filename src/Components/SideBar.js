@@ -20,26 +20,29 @@ function SideBar() {
                 <YouTube />
                 <span>Orignals</span>
             </div>
-            <hr />
-            <div className="sidebar__item">
-                <VideoLibrary />
-                <span>Library</span>
-            </div>
-            <div className="sidebar__item">
-                <History />
-                <span>Histort</span>
-            </div>
-            <div className="sidebar__item">
-                <OndemandVideo />
-                <span>Your Video</span>
-            </div>
-            <div className="sidebar__item">
-                <WatchLater />
-                <span>Watch Later</span>
-            </div>
-            <div className="sidebar__item">
-                <ThumbUpAlt />
-                <span>Liked Videos</span>
+            <div className="sidebar__additional">
+                <hr />
+
+                <div className="sidebar__item">
+                    <VideoLibrary />
+                    <span>Library</span>
+                </div>
+                <div className="sidebar__item">
+                    <History />
+                    <span>Histort</span>
+                </div>
+                <div className="sidebar__item">
+                    <OndemandVideo />
+                    <span>Your Video</span>
+                </div>
+                <div className="sidebar__item">
+                    <WatchLater />
+                    <span>Watch Later</span>
+                </div>
+                <div className="sidebar__item">
+                    <ThumbUpAlt />
+                    <span>Liked Videos</span>
+                </div>
             </div>
         </div>
     )
