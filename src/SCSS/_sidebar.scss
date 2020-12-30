@@ -1,0 +1,33 @@
+.sidebar{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    hr{
+        margin: 12px 0;
+        border-top:1px solid #e5e5e5;
+    }
+}
+.sidebar__item{
+    height:40px ;
+    display: flex;
+    align-items: center;
+    .MuiSvgIcon-root{
+        color:#606060;
+        margin: 0 24px;
+    }
+    &:hover{
+    background-color: #f2f2f2;
+
+    }
+}
+
+.sidebar__item--active{
+    background-color: #e5e5e5;
+    color: #030303;
+    .MuiSvgIcon-root{
+        color:#ff0000;
+    }
+    font-weight: bold;
+}
